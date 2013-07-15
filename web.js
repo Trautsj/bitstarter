@@ -6,7 +6,7 @@ var app = express.createServer(express.logger());
 var Msg = MsgBuf.toString('utf-8',1,28); */
 
 app.get('/', function(request, response) {
-    var fs = reqruie('fs');
+    var fs = require('fs');
     var content = fs.readFileSync('index.html', 'utf-8');
     /* response.send(Msg); */
 });
